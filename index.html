@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LockedIn: focus sessions that write their own summary</title>
-<meta name="description" content="LockedIn times your focus sessions on Mac and iPhone, opens each day with Today's Brief, and turns the tasks you finish into a record of what got done. Free during the beta.">
+<meta name="description" content="LockedIn times your focus sessions on Mac and iPhone, opens each day with Today's Brief, and comes with RiTA, a private assistant on Apple Intelligence. Free during the beta.">
 <link rel="canonical" href="https://theghostmac.github.io/getlockedin/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="LockedIn: focus sessions that write their own summary">
@@ -44,6 +44,7 @@
     <div class="nav-links">
       <a href="#brief">Today's Brief</a>
       <a href="#rita">RiTA</a>
+      <a href="#reading">Reading</a>
       <a href="themes.html">Themes</a>
       <a href="changelog.html">Changelog</a>
     </div>
@@ -53,6 +54,7 @@
   <div class="mobile-menu" id="mobile-menu">
     <a href="#brief">Today's Brief</a>
     <a href="#rita">RiTA</a>
+    <a href="#reading">Reading</a>
     <a href="themes.html">Themes</a>
     <a href="changelog.html">Changelog</a>
     <a href="https://testflight.apple.com/join/eG7GWdMP">Download for macOS</a>
@@ -198,8 +200,28 @@
           <li><i class="ph ph-command" aria-hidden="true"></i><div><b>Command bar</b><span>Press <kbd>⌘K</kbd> to add a task, switch project, pause or end without touching the mouse.</span></div></li>
           <li><i class="ph ph-picture-in-picture" aria-hidden="true"></i><div><b>Floating HUD</b><span>A small panel above your editor with the timer, tasks, notes and a lofi player.</span></div></li>
           <li><i class="ph ph-moon-stars" aria-hidden="true"></i><div><b>Pauses when you walk away</b><span>After 30 minutes without input the session pauses itself and picks up when you are back.</span></div></li>
+          <li><i class="ph ph-lightning" aria-hidden="true"></i><div><b>Quick sessions</b><span>Jump on a side task for another project without stopping your main session. It gets its own timer and tasks.</span></div></li>
           <li><i class="ph ph-sun-dim" aria-hidden="true"></i><div><b>Evening wrap up</b><span>From 5 PM, Home shows what you finished today and lets you plan tomorrow in a minute.</span></div></li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="reading" aria-labelledby="reading-title">
+    <div class="wrap feature-grid rise">
+      <div>
+        <p class="eyebrow">Reading</p>
+        <h2 class="section-title" id="reading-title">Save the article now,<br>read it when you can focus</h2>
+        <p class="section-lead">Drop links into LockedIn instead of leaving forty tabs open. It keeps the text, so every piece opens in a calm reader on your Mac or iPhone, with nothing else on the page.</p>
+        <ul class="ticks">
+          <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i><span><b>Paste and forget.</b> Paste a link in Reading or into ⌘K, and it waits on your other devices too.</span></li>
+          <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i><span><b>A reader worth opening.</b> A serif at a comfortable size on warm paper, or ink at night, with your place saved.</span></li>
+          <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i><span><b>Reading counts.</b> Tap Focus on this and the time goes into your day like any other session.</span></li>
+          <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i><span><b>Ask RiTA first.</b> Get the key points in seconds, then decide if it deserves the full read.</span></li>
+        </ul>
+      </div>
+      <div class="phone">
+        <img src="assets/iphone-reader.jpg" width="603" height="1311" alt="The LockedIn reader on iPhone showing an article on warm paper with Summarize and Focus on this buttons" loading="lazy">
       </div>
     </div>
   </section>
@@ -239,14 +261,15 @@
     <div class="wrap">
       <div class="rita rise">
         <div class="rita-head">
-          <p class="eyebrow"><i class="ph-fill ph-sparkle" aria-hidden="true"></i> Coming to LockedIn</p>
+          <p class="eyebrow"><i class="ph-fill ph-sparkle" aria-hidden="true"></i> New in LockedIn</p>
           <h2 class="section-title" id="rita-title">Meet RiTA, the assistant<br>that already knows your day</h2>
-          <p class="section-lead">RiTA runs on Apple Intelligence, right on your Mac and iPhone. It reads your sessions, tasks and notes without sending them anywhere, so it can help with your actual work instead of guessing.</p>
+          <p class="section-lead">RiTA runs on Apple Intelligence, right on your Mac and iPhone. It reads your sessions, tasks, meetings and pull requests without sending them anywhere, so it helps with your actual work instead of guessing. Ask it from Today's Brief or with ⌘K.</p>
         </div>
         <ul class="rita-list">
-          <li><i class="ph ph-microphone-stage" aria-hidden="true"></i><div><b>Standup in ten seconds</b><span>Ask what you did yesterday and get a ready to paste update, built from the sessions and tasks you actually logged.</span></div></li>
-          <li><i class="ph ph-compass" aria-hidden="true"></i><div><b>What to work on next</b><span>RiTA weighs due dates, open reviews and the gaps between meetings, then suggests the one thing to start now.</span></div></li>
-          <li><i class="ph ph-list-plus" aria-hidden="true"></i><div><b>Notes into tasks</b><span>Paste a messy brain dump or meeting notes and get a clean task list, filed under the right project.</span></div></li>
+          <li><i class="ph ph-microphone-stage" aria-hidden="true"></i><div><b>Standup in ten seconds</b><span>Yesterday, Today and Blockers, written from the sessions, tasks and pull requests you actually have. Copy it straight into Slack.</span></div></li>
+          <li><i class="ph ph-compass" aria-hidden="true"></i><div><b>What to work on next</b><span>RiTA weighs overdue tasks, reviews waiting on you and your next meeting, then picks the one thing to start now and says why.</span></div></li>
+          <li><i class="ph ph-list-plus" aria-hidden="true"></i><div><b>Notes into tasks</b><span>Paste meeting notes or a brain dump and get a clean checklist, filed under the right projects, ready to add to today.</span></div></li>
+          <li><i class="ph ph-article" aria-hidden="true"></i><div><b>Summaries of what you save</b><span>Any article in Reading, boiled down to its key points and who should read it in full.</span></div></li>
           <li><i class="ph ph-lock-key" aria-hidden="true"></i><div><b>Private by design</b><span>Apple Intelligence runs on device. Your work stays on your hardware, with no extra account and no usage limits.</span></div></li>
         </ul>
       </div>
