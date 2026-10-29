@@ -157,17 +157,20 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .text-link:hover { color: var(--text); background: var(--surface-2); }
 
 /* Themes */
-.themes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+.themes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 48px; }
 .theme { background: var(--surface); border-radius: 24px; padding: 8px; }
-.theme img { border-radius: 16px; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+/* Columns sized so the 16:9 Mac and 270:585 iPhone previews share one height. */
+.previews { display: grid; grid-template-columns: 3.85fr 1fr; gap: 8px; }
+.previews img { border-radius: 16px; width: 100%; height: auto; }
+.previews img:first-child { aspect-ratio: 16 / 9; }
+.previews img:last-child { aspect-ratio: 270 / 585; }
 .theme-body { padding: 16px 16px 12px; }
 .theme h2 { font-size: 20px; line-height: 28px; }
 .theme p { color: var(--text-2); font-size: 14px; line-height: 20px; margin-top: 4px; }
 .theme-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 .how-to { margin-top: 64px; max-width: 680px; }
 .how-to ol { margin: 16px 0 0; padding-left: 24px; display: grid; gap: 8px; color: var(--text-2); }
-@media (max-width: 900px) { .themes { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 640px) { .themes { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .themes { grid-template-columns: 1fr; } }
 
 /* Sections */
 section { padding: 96px 0; }
