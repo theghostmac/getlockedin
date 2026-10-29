@@ -199,6 +199,61 @@ section { padding: 96px 0; }
 }
 .phone img { border-radius: 40px; width: 100%; height: auto; aspect-ratio: 1206 / 2622; }
 
+/* Feature with phone */
+.feature-grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 64px; align-items: center; }
+.ticks { margin: 32px 0 0; padding: 0; list-style: none; display: grid; gap: 16px; color: var(--text-2); }
+.ticks li { display: flex; gap: 12px; }
+.ticks i { color: var(--accent); margin-top: 4px; flex: none; }
+.ticks b { color: var(--text); font-weight: 600; }
+.note { margin-top: 24px; font-size: 14px; line-height: 20px; color: var(--text-3); }
+
+/* Integrations */
+.integrations { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+.integration { background: var(--surface); border-radius: 24px; padding: 32px; display: grid; gap: 24px; align-content: start; }
+.integration .icon { width: 48px; height: 48px; border-radius: 16px; display: grid; place-items: center; background: var(--bg); font-size: 24px; color: var(--text); }
+.integration h3 { font-size: 20px; line-height: 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 8px; }
+.integration p { color: var(--text-2); }
+.integration.soon .icon { color: var(--text-3); }
+.tag { font-size: 12px; line-height: 16px; font-weight: 600; padding: 4px 8px; border-radius: 9999px; background: var(--surface-2); color: var(--text-2); }
+.tag.live { background: rgba(22, 163, 74, 0.14); color: #15803d; }
+
+/* RiTA */
+.rita { background: var(--ink); color: #f5efe6; border-radius: 32px; padding: 64px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.rita .eyebrow { color: #f26419; display: flex; align-items: center; gap: 8px; }
+.rita .section-lead { color: rgba(245, 239, 230, 0.72); }
+.rita-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 16px; }
+.rita-list li { display: flex; gap: 16px; background: rgba(255, 255, 255, 0.06); border-radius: 16px; padding: 16px; }
+.rita-list i { color: #f26419; font-size: 24px; flex: none; }
+.rita-list b { display: block; font-weight: 600; }
+.rita-list span { color: rgba(245, 239, 230, 0.72); font-size: 14px; line-height: 20px; }
+
+/* Changelog */
+.log-head .label { font-size: 14px; line-height: 20px; color: var(--text-3); display: flex; gap: 12px; flex-wrap: wrap; }
+.log-head .label b { color: var(--accent); font-weight: 600; }
+.log-controls { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; margin-top: 40px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+.jump { display: flex; flex-wrap: wrap; gap: 4px; }
+.jump a { font-size: 14px; line-height: 20px; font-weight: 600; color: var(--text-2); text-decoration: none; padding: 4px 12px; border-radius: 9999px; transition: background-color 300ms var(--ease), color 300ms var(--ease); }
+.jump a:hover { background: var(--surface-2); color: var(--text); }
+.platforms { display: inline-flex; padding: 4px; gap: 4px; border-radius: 9999px; background: var(--surface); }
+.platforms button { border: 0; background: transparent; font: inherit; font-size: 14px; line-height: 20px; font-weight: 600; color: var(--text-2); padding: 4px 16px; border-radius: 9999px; cursor: pointer; transition: background-color 300ms var(--ease), color 300ms var(--ease); }
+.platforms button[aria-pressed="true"] { background: var(--bg); color: var(--text); }
+.month { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 32px; padding: 48px 0; border-bottom: 1px solid var(--line); }
+.month-label { position: sticky; top: 96px; align-self: start; font-size: 14px; line-height: 20px; font-weight: 600; color: var(--text-3); }
+.month h2 { font-size: 30px; line-height: 36px; letter-spacing: -0.02em; margin-bottom: 32px; }
+.release { display: grid; gap: 12px; padding: 32px 0; border-top: 1px solid var(--line); }
+.release:first-of-type { border-top: 0; padding-top: 0; }
+.release time { font-size: 14px; line-height: 20px; color: var(--text-3); }
+.release h3 { font-size: 24px; line-height: 32px; letter-spacing: -0.01em; }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; }
+.badge { font-size: 12px; line-height: 16px; font-weight: 600; padding: 4px 8px; border-radius: 6px; background: var(--surface-2); color: var(--text-2); display: inline-flex; align-items: center; gap: 4px; }
+.badge.version { background: rgba(194, 65, 12, 0.12); color: var(--accent); }
+.release .intro { font-weight: 600; color: var(--text); max-width: 680px; }
+.changes { margin: 8px 0 0; padding: 0; list-style: none; display: grid; gap: 16px; max-width: 680px; }
+.changes li { padding-left: 20px; position: relative; color: var(--text-2); }
+.changes li::before { content: ""; position: absolute; left: 0; top: 10px; width: 6px; height: 6px; border-radius: 9999px; background: var(--accent); }
+.changes b { display: block; color: var(--text); font-weight: 600; }
+.release[hidden], .month[hidden] { display: none; }
+
 /* Problem to solution */
 .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 48px; }
 .card { background: var(--surface); border-radius: 24px; padding: 32px; }
@@ -297,7 +352,11 @@ footer { border-top: 1px solid var(--line); padding: 40px 0; font-size: 14px; li
 
 @media (max-width: 900px) {
   .hero { padding-top: 128px; }
-  .hero-grid, .mac { grid-template-columns: 1fr; }
+  .hero-grid, .mac, .feature-grid, .rita { grid-template-columns: 1fr; }
+  .integrations { grid-template-columns: 1fr; }
+  .rita { padding: 40px 24px; }
+  .month { grid-template-columns: 1fr; gap: 8px; }
+  .month-label { position: static; }
   .hero h1 { font-size: 48px; }
   .tagline { font-size: 48px; }
   .compare, .benefits, .steps { grid-template-columns: 1fr; }
@@ -319,3 +378,8 @@ footer { border-top: 1px solid var(--line); padding: 40px 0; font-size: 14px; li
   .legal h1 { font-size: 36px; line-height: 40px; }
 }
 .legal a.btn { color: var(--text); }
+@media (prefers-color-scheme: dark) { .tag.live { color: #4ade80; } }
+.legal .month h2 { font-size: 36px; line-height: 40px; margin-bottom: 32px; }
+.legal .release h3 { font-size: 24px; line-height: 32px; }
+.legal .jump a { color: var(--text-2); }
+.legal .jump a:hover { color: var(--text); }

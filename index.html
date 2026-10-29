@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LockedIn: focus sessions that write their own summary</title>
-<meta name="description" content="LockedIn times your focus sessions on Mac and iPhone and turns the tasks you finish into a record of what got done. Free during the beta.">
+<meta name="description" content="LockedIn times your focus sessions on Mac and iPhone, opens each day with Today's Brief, and turns the tasks you finish into a record of what got done. Free during the beta.">
 <link rel="canonical" href="https://theghostmac.github.io/getlockedin/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="LockedIn: focus sessions that write their own summary">
@@ -42,19 +42,19 @@
   <nav class="nav" aria-label="Main">
     <a class="brand" href="./" aria-current="page"><img src="assets/icon.png" alt="" width="24" height="24">LockedIn</a>
     <div class="nav-links">
-      <a href="#how">How it works</a>
-      <a href="#mac">On the Mac</a>
-      <a href="#faq">FAQ</a>
+      <a href="#brief">Today's Brief</a>
+      <a href="#rita">RiTA</a>
       <a href="themes.html">Themes</a>
+      <a href="changelog.html">Changelog</a>
     </div>
     <a class="btn btn-primary btn-small" href="https://testflight.apple.com/join/eG7GWdMP">Download</a>
     <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
   </nav>
   <div class="mobile-menu" id="mobile-menu">
-    <a href="#how">How it works</a>
-    <a href="#mac">On the Mac</a>
-    <a href="#faq">FAQ</a>
+    <a href="#brief">Today's Brief</a>
+    <a href="#rita">RiTA</a>
     <a href="themes.html">Themes</a>
+    <a href="changelog.html">Changelog</a>
     <a href="https://testflight.apple.com/join/eG7GWdMP">Download for macOS</a>
   </div>
 </header>
@@ -77,6 +77,26 @@
       </div>
       <div class="phone rise">
         <img src="assets/iphone-home.jpg" width="603" height="1311" alt="LockedIn on iPhone: a 48 minute session on Onboarding redesign with a 21 day streak and today's brief" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <section id="brief" aria-labelledby="brief-title">
+    <div class="wrap feature-grid rise">
+      <div>
+        <p class="eyebrow">Today's Brief</p>
+        <h2 class="section-title" id="brief-title">Your morning,<br>already sorted</h2>
+        <p class="section-lead">LockedIn opens each day with one page: what you shipped yesterday, the meetings ahead, the pull requests waiting on you, and the tasks for today. Read it with your coffee, tap Start the day, and you are working.</p>
+        <ul class="ticks">
+          <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i><span><b>Since yesterday.</b> Hours focused, sessions, and every task you finished, by project.</span></li>
+          <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i><span><b>Your day.</b> Today's meetings from your calendar, with join links and the free time between them.</span></li>
+          <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i><span><b>On GitHub.</b> Reviews waiting on you and what is blocking your own pull requests. Add any of them to today in one tap.</span></li>
+          <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i><span><b>Start the day.</b> Anything left open from earlier moves to today, so nothing quietly slips.</span></li>
+        </ul>
+        <p class="note">On iPhone it arrives as a notification each morning.</p>
+      </div>
+      <div class="phone">
+        <img src="assets/iphone-brief.jpg" width="603" height="1311" alt="Today's Brief on iPhone: Thursday, October 29, with yesterday's focus time, finished tasks, and today's calendar" loading="lazy">
       </div>
     </div>
   </section>
@@ -124,9 +144,9 @@
           <p>Every task you finish during a session is saved with it. Look back at any day and see the hours and the actual output side by side.</p>
         </article>
         <article class="benefit">
-          <div class="icon"><i class="ph ph-sun-horizon" aria-hidden="true"></i></div>
-          <h3>A brief each morning</h3>
-          <p>Yesterday's work, today's open tasks and the meetings from your calendar, with the free stretches between them where focus fits.</p>
+          <div class="icon"><i class="ph ph-share-network" aria-hidden="true"></i></div>
+          <h3>A day worth sharing</h3>
+          <p>Turn any day or week into a clean card with your hours, streak and what shipped. Copy it or post it straight to your story.</p>
         </article>
         <article class="benefit">
           <div class="icon"><i class="ph ph-flame" aria-hidden="true"></i></div>
@@ -179,6 +199,55 @@
           <li><i class="ph ph-picture-in-picture" aria-hidden="true"></i><div><b>Floating HUD</b><span>A small panel above your editor with the timer, tasks, notes and a lofi player.</span></div></li>
           <li><i class="ph ph-moon-stars" aria-hidden="true"></i><div><b>Pauses when you walk away</b><span>After 30 minutes without input the session pauses itself and picks up when you are back.</span></div></li>
           <li><i class="ph ph-sun-dim" aria-hidden="true"></i><div><b>Evening wrap up</b><span>From 5 PM, Home shows what you finished today and lets you plan tomorrow in a minute.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="integrations" aria-labelledby="integrations-title">
+    <div class="wrap rise">
+      <p class="eyebrow">Integrations</p>
+      <h2 class="section-title" id="integrations-title">Brings in the tools<br>your day already runs on</h2>
+      <p class="section-lead">Connect once and LockedIn pulls what matters into Today's Brief and your task list, so you stop checking five apps before you start.</p>
+      <div class="integrations">
+        <article class="integration">
+          <div class="icon"><i class="ph ph-github-logo" aria-hidden="true"></i></div>
+          <div>
+            <h3>GitHub <span class="tag live">Available</span></h3>
+            <p>Pull requests waiting on your review and what is blocking your own, every morning. Turn any of them into a task for today.</p>
+          </div>
+        </article>
+        <article class="integration">
+          <div class="icon"><i class="ph ph-calendar-dots" aria-hidden="true"></i></div>
+          <div>
+            <h3>Apple Calendar and Mail accounts <span class="tag live">Available</span></h3>
+            <p>Meetings from every account on your Mac or iPhone, including Google and Outlook. Add your work email account in System Settings, then Internet Accounts, and its calendar shows up in LockedIn.</p>
+          </div>
+        </article>
+        <article class="integration soon">
+          <div class="icon"><i class="ph ph-slack-logo" aria-hidden="true"></i></div>
+          <div>
+            <h3>Slack and more <span class="tag">Coming soon</span></h3>
+            <p>Mentions and threads that need you, in the same morning page. More of the apps you use every day are on the way.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="rita" aria-labelledby="rita-title">
+    <div class="wrap">
+      <div class="rita rise">
+        <div class="rita-head">
+          <p class="eyebrow"><i class="ph-fill ph-sparkle" aria-hidden="true"></i> Coming to LockedIn</p>
+          <h2 class="section-title" id="rita-title">Meet RiTA, the assistant<br>that already knows your day</h2>
+          <p class="section-lead">RiTA runs on Apple Intelligence, right on your Mac and iPhone. It reads your sessions, tasks and notes without sending them anywhere, so it can help with your actual work instead of guessing.</p>
+        </div>
+        <ul class="rita-list">
+          <li><i class="ph ph-microphone-stage" aria-hidden="true"></i><div><b>Standup in ten seconds</b><span>Ask what you did yesterday and get a ready to paste update, built from the sessions and tasks you actually logged.</span></div></li>
+          <li><i class="ph ph-compass" aria-hidden="true"></i><div><b>What to work on next</b><span>RiTA weighs due dates, open reviews and the gaps between meetings, then suggests the one thing to start now.</span></div></li>
+          <li><i class="ph ph-list-plus" aria-hidden="true"></i><div><b>Notes into tasks</b><span>Paste a messy brain dump or meeting notes and get a clean task list, filed under the right project.</span></div></li>
+          <li><i class="ph ph-lock-key" aria-hidden="true"></i><div><b>Private by design</b><span>Apple Intelligence runs on device. Your work stays on your hardware, with no extra account and no usage limits.</span></div></li>
         </ul>
       </div>
     </div>
@@ -242,6 +311,7 @@
   <div class="wrap foot">
     <span>LockedIn by <a href="https://www.theghostmac.codes">MacBobby Chibuzor</a></span>
     <nav aria-label="Footer">
+      <a href="changelog.html">Changelog</a>
       <a href="themes.html">Themes</a>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
