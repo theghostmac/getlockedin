@@ -315,3 +315,4 @@ footer { border-top: 1px solid var(--line); padding: 40px 0; font-size: 14px; li
   .card, .benefit, .step { padding: 24px; }
   .legal h1 { font-size: 36px; line-height: 40px; }
 }
+.legal a.btn { color: var(--text); }
