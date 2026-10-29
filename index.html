@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LockedIn: focus sessions that write their own summary</title>
+<meta name="description" content="LockedIn times your focus sessions on Mac and iPhone and turns the tasks you finish into a record of what got done. Free during the beta.">
+<link rel="canonical" href="https://theghostmac.github.io/getlockedin/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="LockedIn: focus sessions that write their own summary">
+<meta property="og:description" content="Start a session, tick off tasks, end it. LockedIn keeps the record. Free beta for Mac and iPhone.">
+<meta property="og:url" content="https://theghostmac.github.io/getlockedin/">
+<meta property="og:image" content="https://theghostmac.github.io/getlockedin/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fbf6ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131209" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="assets/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Is LockedIn free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The beta is free on Mac and iPhone, with no trial clock and no card."}},
+    {"@type": "Question", "name": "Do I need an account?", "acceptedAnswer": {"@type": "Answer", "text": "No. Everything works on one device without signing in. Sign in with Apple only if you want sync between devices or friends and challenges."}},
+    {"@type": "Question", "name": "What happens if I forget to end a session?", "acceptedAnswer": {"@type": "Answer", "text": "On the Mac, a session pauses itself after 30 minutes without keyboard or mouse input, so the time away is never counted."}},
+    {"@type": "Question", "name": "Where is my data stored?", "acceptedAnswer": {"@type": "Answer", "text": "On your device. If you sign in, your projects, sessions and tasks also sync through our database so they appear on your other devices. There are no ads or trackers."}}
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="./" aria-current="page"><img src="assets/icon.png" alt="" width="24" height="24">LockedIn</a>
+    <div class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#mac">On the Mac</a>
+      <a href="#faq">FAQ</a>
+      <a href="themes.html">Themes</a>
+    </div>
+    <a class="btn btn-primary btn-small" href="https://testflight.apple.com/join/eG7GWdMP">Download</a>
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#how">How it works</a>
+    <a href="#mac">On the Mac</a>
+    <a href="#faq">FAQ</a>
+    <a href="themes.html">Themes</a>
+    <a href="https://testflight.apple.com/join/eG7GWdMP">Download for macOS</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Focus sessions that<br>write their own summary</h1>
+        <p class="sub">LockedIn times your work on Mac and iPhone. The tasks you tick off along the way become the record of what got done, so there is nothing to fill in when you stop.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://testflight.apple.com/join/eG7GWdMP"><i class="ph-fill ph-apple-logo" aria-hidden="true"></i>Download for macOS</a>
+          <a class="text-link" href="https://testflight.apple.com/join/eG7GWdMP"><i class="ph ph-device-mobile" aria-hidden="true"></i>Get the companion iPhone app</a>
+        </div>
+        <ul class="proof">
+          <li><i class="ph ph-check-circle" aria-hidden="true"></i>Free during the beta</li>
+          <li><i class="ph ph-devices" aria-hidden="true"></i>Mac and iPhone</li>
+          <li><i class="ph ph-user-circle-dashed" aria-hidden="true"></i>No account needed</li>
+        </ul>
+      </div>
+      <div class="phone rise">
+        <img src="assets/iphone-home.jpg" width="603" height="1311" alt="LockedIn on iPhone: a 48 minute session on Onboarding redesign with a 21 day streak and today's brief" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="problem-title">
+    <div class="wrap rise">
+      <p class="eyebrow">Why it exists</p>
+      <h2 class="section-title" id="problem-title">Time trackers ask for a report<br>right when you are out of energy</h2>
+      <p class="section-lead">Most of them stop the clock and then hand you a form. Busy days end with that form empty, and a week later nobody remembers what Tuesday was for.</p>
+      <div class="compare">
+        <div class="card before">
+          <h3>The usual way</h3>
+          <ul>
+            <li><i class="ph ph-x" aria-hidden="true"></i>Start a timer, then forget it running over lunch</li>
+            <li><i class="ph ph-x" aria-hidden="true"></i>Write a summary at the end when you just want to close the laptop</li>
+            <li><i class="ph ph-x" aria-hidden="true"></i>Tasks live in one app, hours in another, notes in a third</li>
+          </ul>
+        </div>
+        <div class="card after">
+          <h3>With LockedIn</h3>
+          <ul>
+            <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>The Mac pauses a session after 30 idle minutes, so breaks never count</li>
+            <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>End a session in one tap; what you ticked off becomes its summary</li>
+            <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Tasks, time and notes sit in one place for each project</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal-section" aria-label="What LockedIn is for">
+    <div class="wrap">
+      <p class="tagline">You do the work.<br>LockedIn keeps the receipts.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="benefits-title">
+    <div class="wrap rise">
+      <p class="eyebrow">What you get</p>
+      <h2 class="section-title" id="benefits-title">A clear record of your days<br>without keeping one</h2>
+      <div class="benefits">
+        <article class="benefit">
+          <div class="icon"><i class="ph ph-list-checks" aria-hidden="true"></i></div>
+          <h3>Summaries that write themselves</h3>
+          <p>Every task you finish during a session is saved with it. Look back at any day and see the hours and the actual output side by side.</p>
+        </article>
+        <article class="benefit">
+          <div class="icon"><i class="ph ph-sun-horizon" aria-hidden="true"></i></div>
+          <h3>A brief each morning</h3>
+          <p>Yesterday's work, today's open tasks and the meetings from your calendar, with the free stretches between them where focus fits.</p>
+        </article>
+        <article class="benefit">
+          <div class="icon"><i class="ph ph-flame" aria-hidden="true"></i></div>
+          <h3>Streaks that respect rest</h3>
+          <p>Choose your rest days and they never break the streak. Taking Sunday off is part of the plan, not a failure.</p>
+        </article>
+        <article class="benefit">
+          <div class="icon"><i class="ph ph-device-mobile" aria-hidden="true"></i></div>
+          <h3>Always one glance away</h3>
+          <p>The timer sits in a Live Activity and the Dynamic Island on iPhone, and in a floating HUD on the Mac, so you never dig for it.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" aria-labelledby="how-title">
+    <div class="wrap rise">
+      <p class="eyebrow">How it works</p>
+      <h2 class="section-title" id="how-title">Three steps, and the last one<br>takes a single tap</h2>
+      <ol class="steps">
+        <li class="step">
+          <div class="num">1</div>
+          <h3>Pick a project</h3>
+          <p>Tap a project on Home and the session starts. Recent projects sit at the top, so this is usually your first tap of the day.</p>
+        </li>
+        <li class="step">
+          <div class="num">2</div>
+          <h3>Tick tasks as you go</h3>
+          <p>Add tasks with <kbd>⌘K</kbd> on the Mac or the plus button on iPhone. Tap a title to rename it in place; no edit screens.</p>
+        </li>
+        <li class="step">
+          <div class="num">3</div>
+          <h3>End it</h3>
+          <p>One tap. You see the time, what got done and your streak. Ended by mistake? Resume within 30 minutes and nothing is lost.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="mac" aria-labelledby="mac-title">
+    <div class="wrap">
+      <div class="mac rise">
+        <div>
+          <p class="eyebrow">On the Mac</p>
+          <h2 class="section-title" id="mac-title">Built for the keyboard<br>you already live on</h2>
+          <p class="section-lead">LockedIn on the Mac stays out of the way until you need it, then answers in a keystroke.</p>
+        </div>
+        <ul class="mac-list">
+          <li><i class="ph ph-command" aria-hidden="true"></i><div><b>Command bar</b><span>Press <kbd>⌘K</kbd> to add a task, switch project, pause or end without touching the mouse.</span></div></li>
+          <li><i class="ph ph-picture-in-picture" aria-hidden="true"></i><div><b>Floating HUD</b><span>A small panel above your editor with the timer, tasks, notes and a lofi player.</span></div></li>
+          <li><i class="ph ph-moon-stars" aria-hidden="true"></i><div><b>Pauses when you walk away</b><span>After 30 minutes without input the session pauses itself and picks up when you are back.</span></div></li>
+          <li><i class="ph ph-sun-dim" aria-hidden="true"></i><div><b>Evening wrap up</b><span>From 5 PM, Home shows what you finished today and lets you plan tomorrow in a minute.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="wrap rise">
+      <p class="eyebrow">Questions</p>
+      <h2 class="section-title" id="faq-title">Before you install</h2>
+      <div class="faq">
+        <details>
+          <summary>Is LockedIn free?<i class="ph ph-plus" aria-hidden="true"></i></summary>
+          <p>Yes. The beta is free on Mac and iPhone, with no trial clock and no card.</p>
+        </details>
+        <details>
+          <summary>Do I need an account?<i class="ph ph-plus" aria-hidden="true"></i></summary>
+          <p>No. Everything works on one device without signing in. Sign in with Apple only if you want your Mac and iPhone to sync, or to use friends and challenges.</p>
+        </details>
+        <details>
+          <summary>Which devices does it run on?<i class="ph ph-plus" aria-hidden="true"></i></summary>
+          <p>iPhone and iPad on iOS 26.5 or later, and Macs on macOS 26.5 or later.</p>
+        </details>
+        <details>
+          <summary>How do I install the beta?<i class="ph ph-plus" aria-hidden="true"></i></summary>
+          <p>Install TestFlight from the App Store on your Mac, then open the download link on this page. Do the same on your iPhone for the companion app. TestFlight walks you through the rest, and updates arrive on their own.</p>
+        </details>
+        <details>
+          <summary>What happens if I forget to end a session?<i class="ph ph-plus" aria-hidden="true"></i></summary>
+          <p>On the Mac, a session pauses itself after 30 minutes without keyboard or mouse input, so the time away is never counted. On iPhone, the Live Activity keeps the running timer on your Lock Screen as a reminder.</p>
+        </details>
+        <details>
+          <summary>Where is my data stored?<i class="ph ph-plus" aria-hidden="true"></i></summary>
+          <p>On your device. If you sign in, your projects, sessions and tasks also sync through our database so they show up on your other devices. There are no ads, no analytics and no trackers. The <a href="privacy.html">privacy policy</a> has the details.</p>
+        </details>
+        <details>
+          <summary>Does it watch which apps I use?<i class="ph ph-plus" aria-hidden="true"></i></summary>
+          <p>On the Mac, LockedIn can notice the app in front, such as Xcode or Figma, to show what you are working on. That stays on your Mac and is never uploaded.</p>
+        </details>
+        <details>
+          <summary>How do I send feedback or report a bug?<i class="ph ph-plus" aria-hidden="true"></i></summary>
+          <p>Take a screenshot while using the beta and TestFlight offers to send it with a note. You can also email <a href="mailto:macbobbychibuzor@icloud.com">macbobbychibuzor@icloud.com</a>; every message gets read.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final" aria-labelledby="final-title">
+    <div class="wrap rise">
+      <h2 class="section-title" id="final-title">Start your first session<br>in under a minute</h2>
+      <p class="section-lead">Install TestFlight on your Mac, open the link, pick a project. Add the iPhone app with the same link and your sessions follow you.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://testflight.apple.com/join/eG7GWdMP"><i class="ph-fill ph-apple-logo" aria-hidden="true"></i>Download for macOS</a>
+        <a class="text-link" href="https://testflight.apple.com/join/eG7GWdMP"><i class="ph ph-device-mobile" aria-hidden="true"></i>Get the companion iPhone app</a>
+      </div>
+      <p class="risk">Free during the beta. No account, no card. Delete the app and your data goes with it.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>LockedIn by <a href="https://www.theghostmac.codes">MacBobby Chibuzor</a></span>
+    <nav aria-label="Footer">
+      <a href="themes.html">Themes</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="mailto:macbobbychibuzor@icloud.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>
