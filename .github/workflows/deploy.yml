@@ -21,7 +21,7 @@ jobs:
       - run: |
           mkdir dist
           cp -R *.html assets themes dist/
-      - run: npx --yes wrangler@4 pages deploy dist --project-name getlockedin --branch main
+      - run: npx --yes wrangler@4 pages deploy dist --project-name lockedinapp --branch main
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
