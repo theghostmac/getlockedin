@@ -1,3 +1,3 @@
 # LockedIn website
 
-The landing page, themes, privacy policy and terms for [LockedIn](https://theghostmac.github.io/getlockedin/). Plain HTML and CSS, served by GitHub Pages.
+The landing page, themes, privacy policy and terms for [LockedIn](https://getlockedin.pages.dev/). Plain HTML and CSS, served by Cloudflare Pages: every push to `main` deploys through `.github/workflows/deploy.yml`.
