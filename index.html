@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LockedIn: focus sessions that write their own summary</title>
-<meta name="description" content="LockedIn times your focus sessions on Mac and iPhone, opens each day with Today's Brief, and comes with RiTA, a private assistant on Apple Intelligence. Free during the beta.">
+<meta name="description" content="LockedIn times your focus sessions on Mac and iPhone, opens each day with Today's Brief, transcribes your calls on your Mac, and comes with RiTA, a private assistant on Apple Intelligence. Free during the beta.">
 <link rel="canonical" href="https://theghostmac.github.io/getlockedin/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="LockedIn: focus sessions that write their own summary">
@@ -45,6 +45,7 @@
       <a href="#brief">Today's Brief</a>
       <a href="#rita">RiTA</a>
       <a href="#reading">Reading</a>
+      <a href="#meetings">Meetings</a>
       <a href="themes.html">Themes</a>
       <a href="changelog.html">Changelog</a>
     </div>
@@ -55,6 +56,7 @@
     <a href="#brief">Today's Brief</a>
     <a href="#rita">RiTA</a>
     <a href="#reading">Reading</a>
+    <a href="#meetings">Meetings</a>
     <a href="themes.html">Themes</a>
     <a href="changelog.html">Changelog</a>
     <a href="https://testflight.apple.com/join/eG7GWdMP">Download for macOS</a>
@@ -197,7 +199,7 @@
           <p class="section-lead">LockedIn on the Mac stays out of the way until you need it, then answers in a keystroke.</p>
         </div>
         <ul class="mac-list">
-          <li><i class="ph ph-command" aria-hidden="true"></i><div><b>Command bar</b><span>Press <kbd>⌘K</kbd> to add a task, switch project, pause or end without touching the mouse.</span></div></li>
+          <li><i class="ph ph-command" aria-hidden="true"></i><div><b>Command bar</b><span>Press <kbd>⌘K</kbd> to add a task, switch project, pause or end without touching the mouse. Search results act too: start a project or tick off a task right from them.</span></div></li>
           <li><i class="ph ph-picture-in-picture" aria-hidden="true"></i><div><b>Floating HUD</b><span>A small panel above your editor with the timer, tasks, notes and a lofi player.</span></div></li>
           <li><i class="ph ph-moon-stars" aria-hidden="true"></i><div><b>Pauses when you walk away</b><span>After 30 minutes without input the session pauses itself and picks up when you are back.</span></div></li>
           <li><i class="ph ph-lightning" aria-hidden="true"></i><div><b>Quick sessions</b><span>Jump on a side task for another project without stopping your main session. It gets its own timer and tasks.</span></div></li>
@@ -215,13 +217,33 @@
         <p class="section-lead">Drop links into LockedIn instead of leaving forty tabs open. It keeps the text, so every piece opens in a calm reader on your Mac or iPhone, with nothing else on the page.</p>
         <ul class="ticks">
           <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i><span><b>Paste and forget.</b> Paste a link in Reading or into ⌘K, and it waits on your other devices too.</span></li>
-          <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i><span><b>A reader worth opening.</b> A serif at a comfortable size on warm paper, or ink at night, with your place saved.</span></li>
+          <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i><span><b>A reader worth opening.</b> A serif at a comfortable size on warm paper, or ink at night, with the page's links and images kept and your place saved.</span></li>
+          <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i><span><b>Mark it up.</b> Highlight in four colours and add notes in the margin. They follow the article to your other devices.</span></li>
+          <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i><span><b>Or listen.</b> Have any article read aloud while you do something else.</span></li>
           <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i><span><b>Reading counts.</b> Tap Focus on this and the time goes into your day like any other session.</span></li>
           <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i><span><b>Ask RiTA first.</b> Get the key points in seconds, then decide if it deserves the full read.</span></li>
         </ul>
       </div>
       <div class="phone">
         <img src="assets/iphone-reader.jpg" width="603" height="1311" alt="The LockedIn reader on iPhone showing an article on warm paper with Summarize and Focus on this buttons" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="meetings" aria-labelledby="meetings-title">
+    <div class="wrap">
+      <div class="mac rise">
+        <div>
+          <p class="eyebrow">Meetings</p>
+          <h2 class="section-title" id="meetings-title">Every call, written down,<br>without it leaving your Mac</h2>
+          <p class="section-lead">When Google Meet, Zoom, Teams or a Slack huddle picks up your microphone, LockedIn offers to transcribe the call. Apple's speech model does the work on your Mac. The audio is never kept and the transcript never leaves.</p>
+        </div>
+        <ul class="mac-list">
+          <li><i class="ph ph-waveform" aria-hidden="true"></i><div><b>One tap, then forget it</b><span>LockedIn notices the call, names it after your calendar event, and stops when the call ends.</span></div></li>
+          <li><i class="ph ph-users-three" aria-hidden="true"></i><div><b>Reads like a conversation</b><span>Your microphone is you, and everything your Mac plays is the other side, so you can tell who said what.</span></div></li>
+          <li><i class="ph ph-note-pencil" aria-hidden="true"></i><div><b>Your notes beside it</b><span>Jot down what matters while you talk. It is saved with the meeting and the full transcript.</span></div></li>
+          <li><i class="ph ph-lock-key" aria-hidden="true"></i><div><b>Private by default</b><span>Transcripts stay on your Mac. They are not synced and never uploaded.</span></div></li>
+        </ul>
       </div>
     </div>
   </section>
@@ -244,6 +266,13 @@
           <div>
             <h3>Apple Calendar and Mail accounts <span class="tag live">Available</span></h3>
             <p>Meetings from every account on your Mac or iPhone, including Google and Outlook. Add your work email account in System Settings, then Internet Accounts, and its calendar shows up in LockedIn.</p>
+          </div>
+        </article>
+        <article class="integration soon">
+          <div class="icon"><i class="ph ph-terminal-window" aria-hidden="true"></i></div>
+          <div>
+            <h3>Claude Code and other AI agents <span class="tag">Coming soon</span></h3>
+            <p>Ask your agent to add a task to a project, tick one off, check what is due today or find what was said in yesterday's call. It acts only when you ask, over a connection that never leaves your Mac.</p>
           </div>
         </article>
         <article class="integration soon">
@@ -308,6 +337,10 @@
         <details>
           <summary>Does it watch which apps I use?<i class="ph ph-plus" aria-hidden="true"></i></summary>
           <p>On the Mac, LockedIn can notice the app in front, such as Xcode or Figma, to show what you are working on. That stays on your Mac and is never uploaded.</p>
+        </details>
+        <details>
+          <summary>Does LockedIn record my calls?<i class="ph ph-plus" aria-hidden="true"></i></summary>
+          <p>Only when you say so. On the Mac, LockedIn offers to transcribe when a call app starts using your microphone, and nothing happens until you tap Transcribe. The transcription runs on your Mac, the audio is thrown away as it goes, and the transcript stays on that Mac. Let the people on the call know you are transcribing.</p>
         </details>
         <details>
           <summary>How do I send feedback or report a bug?<i class="ph ph-plus" aria-hidden="true"></i></summary>
